@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamad Bin Saeed - Portfolio</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* General Body Styling with repeating pattern background */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/free-vector/vector-seamless-pattern-from-repeating-striped-squares_2960-114.jpg') repeat;
+            color: #333;
+            overflow-x: hidden;
+            background-attachment: fixed;
+        }
+
+        /* Lighter Gradient for Header */
+        header {
+            background: linear-gradient(135deg, #78a1bb, #89c4db); /* Lighter gradient */
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            max-width: 95%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Styling with lighter background */
+        section {
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #f9fafb; /* Light container background */
+            color: #333;
+            position: relative;
+        }
+
+        h2 {
+            color: #2B547E;
+            font-size: 2em;
+            border-bottom: 2px solid #87CEEB;
+            padding-bottom: 10px;
+        }
+
+        /* Collapsible Sections with background pattern and gradient */
+        .collapsible {
+            background: linear-gradient(135deg, rgba(120, 161, 187, 0.9), rgba(137, 196, 219, 0.2)), 
+                        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsbmLQ-_fwCivTxTs9J9ZnUpZqBUam7iTGxw&s'); /* Background pattern + gradient */
+            background-repeat: repeat;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.4em; /* Bigger text */
+            font-weight: bold; /* Bold text */
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .collapsible:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+        }
+
+        .collapsible.active:after {
+            content: "\2212"; /* Minus sign */
+        }
+
+        .collapsible-content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #ffffff; /* White for content inside collapsible */
+            margin-top: 10px;
+        }
+
+        /* Skill Bar Styling */
+        .skill-table {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: auto;
+        }
+
+        .skill-bar {
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            background-color: #e0e0e0;
+        }
+
+        .skill-fill {
+            height: 100%;
+            background-color: #2B547E;
+            width: 0;
+        }
+
+        /* Icon Styling */
+        .icon {
+            margin-right: 10px;
+            font-size: 1.3em;
+            color: #2B547E;
+        }
+
+        /* Footer Styling */
+    /* Footer Styling with Gradient Animation */
+footer {
+    background: linear-gradient(135deg, #78a1bb, #89c4db, #fbb03b, #f85a40, #3a1c71);
+    background-size: 300% 300%;
+    animation: gradientShift 12s ease infinite; /* Gradient Animation */
+    text-align: center;
+    padding: 40px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+    </style>
+</head>
+<body>
+
+<header class="box-shadow">
+    <h1>Hamad Bin Saeed - Portfolio</h1>
+</header>
+
+<section class="container">
+    <h2>Introduction</h2>
+    <div class="intro-section">
+        <p>My name is Hamad Bin Saeed, and I am currently pursuing a Bachelor's in IT from the University of Mirpurkhas. I am in my last semester. I have been working as a Project Manager at EasyAiz for over a year. My job includes project management, client handling, employee task delegation, issue resolution, and providing timely updates to clients regarding their projects.</p>
+        <p><strong>Contact Information:</strong><br>
+        Phone: 03133631737<br>
+        Email: <a href="mailto:hammadoffical88@gmail.com">hammadoffical88@gmail.com</a>
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Skills</h2>
+    <button class="collapsible">
+        <i class="fas fa-chart-line icon"></i>Skills
+    </button>
+    <div class="collapsible-content">
+        <div class="skill-table">
+            <i class="fas fa-tasks icon"></i>
+            <p>Project Management</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill-table">
+            <i class="fas fa-comments icon"></i>
+            <p>Client Communication</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill-table">
+            <i class="fas fa-cogs icon"></i>
+            <p>Technical Management</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill-table">
+            <i class="fas fa-database icon"></i>
+            <p>Data Management</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill-table">
+            <i class="fas fa-code icon"></i>
+            <p>Python Programming</p>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 50%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Experience</h2>
+    <button class="collapsible">
+        <i class="fas fa-briefcase icon"></i>Experience
+    </button>
+    <div class="collapsible-content">
+        <p>Currently working as a Project Manager at EasyAiz. My role involves project planning, client communication, employee task delegation, solving technical issues, and ensuring timely updates for clients.</p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Case Studies</h2>
+    <button class="collapsible">
+        <i class="fas fa-lightbulb icon"></i>Case Studies
+    </button>
+    <div class="collapsible-content">
+        <div class="case-study-table" style="background-color: rgba(240, 240, 240, 0.9);">
+            <h3>Case Study 1</h3>
+            <p>Improved the existing workflow of a client by implementing agile methodologies.</p>
+        </div>
+        <div class="case-study-table" style="background-color: rgba(240, 240, 240, 0.9);">
+            <h3>Case Study 2</h3>
+            <p>Developed a new software solution that increased productivity by 30%.</p>
+        </div>
+        <div class="case-study-table" style="background-color: rgba(240, 240, 240, 0.9);">
+            <h3>Case Study 3</h3>
+            <p>Led a team that successfully completed a project 2 months ahead of schedule.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Testimonials</h2>
+    <button class="collapsible">
+        <i class="fas fa-users icon"></i>Testimonials
+    </button>
+    <div class="collapsible-content">
+        <div class="testimonial-table">
+            <h3>Testimonial 1</h3>
+            <p>"Hamad is a dedicated professional who consistently meets deadlines and delivers quality work."</p>
+        </div>
+        <div class="testimonial-table">
+            <h3>Testimonial 2</h3>
+            <p>"His communication skills make it easy to collaborate and resolve issues efficiently."</p>
+        </div>
+        <div class="testimonial-table">
+            <h3>Testimonial 3</h3>
+            <p>"Hamad's leadership in our project was pivotal to its success. Highly recommended!"</p>
+        </div>
+    </div>
+</section>
+
+<section class="resume-upload">
+    <h2>Resume</h2>
+    <p>Please upload your resume:</p>
+    <input type="file" accept=".pdf,.doc,.docx" id="resumeUpload" onchange="showUploadButton()">
+    <button class="upload-button" id="uploadButton">Upload</button>
+</section>
+
+<footer>
+    <p>&copy; 2024 Hamad Bin Saeed. All rights reserved.</p>
+</footer>
+
+<script>
+    // Collapsible functionality
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+    // Show upload button when a file is selected
+    function showUploadButton() {
+        var uploadButton = document.getElementById("uploadButton");
+        uploadButton.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
